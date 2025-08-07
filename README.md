@@ -1,4 +1,4 @@
-## 📧 Mail Server: Postfix + Dovecot + OpenSSL + Samba AD-DC
+# 📧 Mail Server: Postfix + Dovecot + OpenSSL + Samba AD-DC
 Secure mail server configuration on Ubuntu, integrating:
 
 • Postfix for sending mail (SMTP)
@@ -42,12 +42,36 @@ apt update
 
 apt install -y samba winbind krb5-config smbclient dnsutils net-tools
 ```
-Insert <--> Your Domain exemple : CMC.MA
+• Insert <--> Your Domain exemple : `CMC.MA`
+
 ![Step](images/step1.png)
 
-Insert <--> hostname.domain exemple : srv-mail.ofppt.ma
+• Insert <--> hostname.domain exemple : `srv-mail.ofppt.ma`
+
 ![Step](images/step2.png)
 
-Insert <--> hostname.domain exemple : srv-mail.ofppt.ma
+• Insert <--> hostname.domain exemple : `srv-mail.ofppt.ma`
+
 ![Step](images/step3.png)
 
+## Transfer the main configuration:
+
+```bash
+mv /etc/samba/smb.conf /etc/samba/smb.conf.org
+```
+
+## Config Samba-AD-DC :
+
+```bash
+samba-tool domain provision --use-rfc2307 --interactive
+```
+
+• Insert <--> Your Domain exemple : `CMC.MA`
+• Insert <--> IP (Dns) exemple : `192.168.1.10`
+• Insert <--> Administrator Password exemple : `P@ssw0rd`
+
+![Step](images/step4.png)
+
+You should see: 
+
+![Step](images/step5.png)
