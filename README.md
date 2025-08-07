@@ -12,7 +12,7 @@ Secure mail server configuration on Ubuntu, integrating:
 • DHCP server for dynamic IP management
 
 ## 🧪 Lab Topology
-![Lab Setup](images/srv-mail1.drawio.png)
+![Lab Setup](images/pic_srvmail.png)
 
 ## 🛠 Step 1: Lab Environment Setup
 🖥️ Virtual Machines
