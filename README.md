@@ -77,3 +77,16 @@ samba-tool domain provision --use-rfc2307 --interactive
 You should see: 
 
 ![Step](images/step5.png)
+
+## Transfer The Main Kerberos configuration file :
+
+```bash
+cp /var/lib/samba/private/krb5.conf /etc/
+```
+
+## Change Setting DNS :
+
+```bash
+nano /etc/resolv.conf
+```
+![Step](images/step6.png)
