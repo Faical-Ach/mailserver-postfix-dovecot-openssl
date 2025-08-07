@@ -89,4 +89,4 @@ cp /var/lib/samba/private/krb5.conf /etc/
 ```bash
 nano /etc/resolv.conf
 ```
-![Step](images/step6.png)
+![Step](images/step7.png)
