@@ -67,7 +67,9 @@ samba-tool domain provision --use-rfc2307 --interactive
 ```
 
 • Insert <--> Your Domain exemple : `CMC.MA`
+
 • Insert <--> IP (Dns) exemple : `192.168.1.10`
+
 • Insert <--> Administrator Password exemple : `P@ssw0rd`
 
 ![Step](images/step4.png)
